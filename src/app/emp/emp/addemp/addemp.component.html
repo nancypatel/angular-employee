@@ -1,0 +1,27 @@
+<p>addemp works!</p>
+<form>
+    <div class="container">
+      <h1>Add Employee</h1>
+      <p></p>
+      <label for="psw"><b>Name</b></label>
+      <input type="text" [(ngModel)]="name" placeholder="Enter name" name="name" [value]="name" required>
+      <br>
+      <br>
+      <label for="phone"><b>Last name</b></label>
+      <input type="text" [(ngModel)]="lastname" placeholder="Enter lastname" name="lastname" [value]="lastname" required>
+      <br>
+      <br>
+      <label for="phone"><b>phone</b></label>
+      <input type="text" [(ngModel)]="phone" placeholder="Enter phone" name="phone" [value]="phone" required>
+      <br>
+      <br>
+      <label for="address"><b>Address</b></label>
+      <input type="text" [(ngModel)]="address" placeholder="Enter address" name="address" [value]="address" required>
+      <br>
+      <br>
+      <label for="city"><b>City</b></label>
+      <input type="text" [(ngModel)]="city" placeholder="Enter city" name="city" [value]="city" required>
+      <br>
+      <button type="button" class="registerbtn"  (click)="save()">Save</button>
+    </div>
+  </form> 

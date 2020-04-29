@@ -1,0 +1,31 @@
+<p>editemp works!</p>
+<form>
+    <div class="container">
+      <h1>Edit Employee</h1>
+      <p></p>
+      <!--[(ngModel)] two way binding , [value] property, (click) event-->
+      <!-- <label for="email"><b>Id</b></label>
+      <input type="text" [(ngModel)]="id" placeholder="Enter id" name="id" [value]="id" required >
+      <br> -->
+      <label for="psw"><b>Name</b></label>
+      <input type="text" [(ngModel)]="name" placeholder="Enter name" name="name" equired>
+      <br>
+      <br>
+      <label for="phone"><b>Last name</b></label>
+      <input type="text" [(ngModel)]="lastname" placeholder="Enter lastname" name="lastname" required>
+      <br>
+      <br>
+      <label for="phone"><b>phone</b></label>
+      <input type="text" [(ngModel)]="phone" placeholder="Enter phone" name="phone" required>
+      <br>
+      <br>
+      <label for="address"><b>Address</b></label>
+      <input type="text" [(ngModel)]="address" placeholder="Enter address" name="address" required>
+      <br>
+      <br>
+      <label for="city"><b>City</b></label>
+      <input type="text" [(ngModel)]="city" placeholder="Enter city" name="city"  required>
+      <br>
+      <button type="button" class="registerbtn" (click)="Editemp(id, empdata)">Update</button>
+    </div>
+  </form> 

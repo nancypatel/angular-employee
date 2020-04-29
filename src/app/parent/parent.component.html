@@ -1,0 +1,5 @@
+<p>parent works!</p>
+
+Messgae: {{message}}
+<app-child [childMsg]='parentmsg' (msgEvent)='receiveMessgae($event)'></app-child><br>
+Parent Message: {{pmessage}}

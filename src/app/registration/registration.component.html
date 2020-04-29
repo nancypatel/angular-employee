@@ -1,0 +1,42 @@
+<form>
+    <div class="container">
+      <h1>Register</h1>
+      <p></p>
+      <!--[(ngModel)] two way binding , [value] property, (click) event-->
+      <label for="email"><b>Email</b></label>
+      <input type="text" [(ngModel)]="email" placeholder="Enter Email" name="email" [value]="email" required >{{email}}
+      <br>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" [(ngModel)]="psw" placeholder="Enter Password" name="psw" [value]="psw" required>{{psw}}
+      <br>
+      <br>
+      <label for="phone"><b>Phone</b></label>
+      <input type="text" [(ngModel)]="phone" placeholder="Enter phone" name="phone" [value]="phone" required>{{phone}}
+      <br>
+      <br>
+      <label for="address"><b>Address</b></label>
+      <input type="text" [(ngModel)]="address" placeholder="Enter address" name="address" [value]="address" required>{{address}}
+      <br>
+      <br>
+      <label for="city"><b>City</b></label>
+      <input type="text" [(ngModel)]="city" placeholder="Enter city" name="city" [value]="city" required>{{city}}
+      <br>
+      <br>
+      <label for="date"><b>Dob</b></label>
+      <input type="date" [(ngModel)]="date" placeholder="Enter date" name="date" [value]="date" required>{{date}}
+      <br>
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" [(ngModel)]="passworrepeat" placeholder="Repeat Password" name="passworrepeat" [value]="passworrepeat" required>{{passworrepeat}}
+      <br>
+      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+      <button type="button" class="registerbtn" (click)="doregister()">Register</button>
+      <button type="button" class="registerbtn" (click)="goLogin()">Login</button>
+      <button type="button" class="registerbtn" (mouseenter)="Enter()">Enter  {{cnt}}</button>
+      <button type="button" class="registerbtn" (click)="Lifecycle()">LifeCycle</button>
+      {{dataObject | json}}
+    </div>
+  
+    <div class="container signin">
+      <p>Already have an account? <a href="#">Sign in</a>.</p>
+    </div>
+  </form> 

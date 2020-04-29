@@ -1,0 +1,43 @@
+<p>emp works!</p>
+
+    <!-- <tr>
+        <th rowspan="1" colspan="1">ID</th>
+        <th rowspan="1" colspan="1">name</th>
+        <th rowspan="1" colspan="1">Lastname</th>
+        <th rowspan="1" colspan="1">Lastname</th>
+    </tr>
+    <tr *ngFor = "let emp of employe">
+       <td *ngIf = "emp.id == 1" rowspan="1" colspan="1">{{emp.id}}</td>
+       <td rowspan="1" colspan="1">{{emp.name}}</td>
+       <td rowspan="1" colspan="1">{{emp.lastname}}</td>  
+    </tr> -->
+
+<body style="background-color: cyan;">
+    <br>
+    <div style="align-items: center;">
+        <button (click)="AddEmp()">Add emp</button>
+    </div><br><br>
+    <table style="width: 100;">
+        <tr style="color:deeppink">
+            <th rowspan="1" colspan="1">ID</th>
+            <th rowspan="1" colspan="1">name</th>
+            <th rowspan="1" colspan="1">Lastname</th>
+            <th rowspan="1" colspan="1">Phone</th>
+            <th rowspan="1" colspan="1">address</th>
+            <th rowspan="1" colspan="1">city</th>
+            <th rowspan="1" colspan="1">edit</th>
+            <th rowspan="1" colspan="1">delete</th>
+        </tr>
+        <tr *ngFor = "let e of empdata">
+           <td rowspan="1" colspan="1">{{e.id}}</td>
+           <td rowspan="1" colspan="1">{{e.name}}</td>
+           <td rowspan="1" colspan="1">{{e.lastname}}</td>  
+           <td rowspan="1" colspan="1">{{e.phone}}</td>
+           <td rowspan="1" colspan="1">{{e.address}}</td>  
+           <td rowspan="1" colspan="1">{{e.city}}</td>
+           <td rowspan="1" colspan="1"><button (click)="EditEmp(e.id)">Edit</button></td> 
+           <td rowspan="1" colspan="1"><button (click)="deleteemp(e.id)">Delete</button></td>  
+        </tr>     
+    </table>
+</body>
+    

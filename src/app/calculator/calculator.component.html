@@ -1,0 +1,25 @@
+<form>
+    <h1 class="title">Calculator</h1>
+    <div class="calculator">
+        <label>Enter no1: </label>
+        <input type="number" class="num" [(ngModel)]="no1"  name="no1" [value]="no1" required><br><br>
+
+        <label>Enter no2: </label>
+        <input type="number" class="num" [(ngModel)]="no2" name="no2" [value]="no2" required>
+        <br><br>
+        <label>Answer:</label> {{total}}<br><br>
+        <div class="outer">
+            <div class="inner"><button type="button" class="button" (click)="add()">Add</button></div>&nbsp;&nbsp;&nbsp;
+            <div class="inner"><button type="button" class="button" (click)="sub()">sub</button></div>&nbsp;&nbsp;
+            <div class="inner"><button type="button" class="button" (click)="mul()">mul</button></div>&nbsp;&nbsp;
+            <div class="inner"><button type="button" class="button" (click)="divi()">div</button></div>&nbsp;&nbsp;<br>
+            <div class="inner"><button type="button" class="button" (click)="clear()">clear</button></div>&nbsp;
+        </div>
+    </div>
+    <button type="button" class="button" (click)="date()">Date</button>
+    <div class="mt-5 ml-auto mr-auto col-md-5 text-center" style="font-size: large;">
+        <b>Today's  Date:</b> {{ todaydate }}
+    </div>
+    <button type="button" class="button" (click)="emp()">Employee</button>
+</form>
+

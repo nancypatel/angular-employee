@@ -1,0 +1,44 @@
+{
+  "employee": [
+    {
+      "id": 1,
+      "name": "nancy",
+      "lastname": "patel",
+      "phone": 8977655444,
+      "address": "nanakwad valsad",
+      "city": "valsad"
+    },
+    {
+      "id": 2,
+      "name": "amit",
+      "lastname": "chauhan",
+      "phone": 788990002,
+      "address": "nanakwad behind blind school",
+      "city": "valsad"
+    },
+    {
+      "name": "parth",
+      "lastname": "patel",
+      "phone": "85677888989",
+      "address": "ram nagar",
+      "city": "vapi",
+      "id": 3
+    },
+    {
+      "name": "charvi",
+      "lastname": "patel",
+      "phone": "890090988",
+      "address": "civil road",
+      "city": "valsad",
+      "id": 4
+    },
+    {
+      "name": "Abc",
+      "lastname": "aaa",
+      "phone": "7887888",
+      "address": "aaaa",
+      "city": "vapi",
+      "id": 5
+    }
+  ]
+}
