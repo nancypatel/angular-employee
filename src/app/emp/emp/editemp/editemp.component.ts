@@ -38,7 +38,7 @@ export class EditempComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public Editemp(id, empdata) {
+  public EditEmp() {
     this.empdata = {
       name: this.name,
       lastname: this.lastname,
@@ -46,8 +46,8 @@ export class EditempComponent implements OnInit {
       address: this.address,
       city: this.city
     };
-    console.log(empdata);
-    this.httpservice.editemp(id, empdata).subscribe((data: any) => {
+    console.log(this.empdata);
+    this.httpservice.editemp(this.id, this.empdata).subscribe((data: any) => {
       if (data) {
         alert('emp data edit succesfully');
         this.router.navigate(['emp']);
