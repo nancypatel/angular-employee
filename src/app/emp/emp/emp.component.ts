@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpService } from 'src/app/Service/http.service';
 import { Router } from '@angular/router';
+import { Employee } from 'src/app/Model/employee.model';
 
 @Component({
   selector: 'app-emp',
@@ -10,7 +11,7 @@ import { Router } from '@angular/router';
 export class EmpComponent implements OnInit {
 
   public employe: object[];
-  public empdata: any[];
+  public empdata: Employee[];
   constructor(
     private httpservice: HttpService,
     private router: Router
@@ -19,7 +20,7 @@ export class EmpComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.httpservice.getAllemp().subscribe((data: any[]) => {
+    this.httpservice.getAllemp().subscribe((data: Employee[]) => {
       if (data) {
         this.empdata = data;
         console.log(data);
@@ -28,7 +29,7 @@ export class EmpComponent implements OnInit {
   }
 
   public deleteemp(id) {
-    this.httpservice.deleteemp(id).subscribe((data: any) => {
+    this.httpservice.deleteemp(id).subscribe((data: Employee) => {
       if (data) {
         alert('emp data delted succesfully');
       }

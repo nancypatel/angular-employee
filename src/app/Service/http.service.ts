@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { Employee } from '../Model/employee.model';
 
 @Injectable({
   providedIn: 'root'
@@ -11,23 +12,23 @@ export class HttpService {
     private http: HttpClient
   ) { }
 
-  public getAllemp(): Observable<any[]> {
-    return this.http.get<any[]>(`http://localhost:3000/employee`);
+  public getAllemp(): Observable<Employee[]> {
+    return this.http.get<Employee[]>(`http://localhost:3000/employee`);
   }
 
-  public getbyidemp(id): Observable<any>{
-    return this.http.get<any>(`http://localhost:3000/employee/${id}`);
+  public getbyidemp(id): Observable<Employee>{
+    return this.http.get<Employee>(`http://localhost:3000/employee/${id}`);
   }
 
-  public addemp(empdata: any): Observable<any>{
-    return this.http.post<any>(`http://localhost:3000/employee`, empdata);
+  public addemp(empdata: any): Observable<Employee>{
+    return this.http.post<Employee>(`http://localhost:3000/employee`, empdata);
   }
 
-  public editemp(id: number, empdata: any): Observable<any>{
-    return this.http.put<any>(`http://localhost:3000/employee/${id}`, empdata);
+  public editemp(id: number, empdata: any): Observable<Employee>{
+    return this.http.put<Employee>(`http://localhost:3000/employee/${id}`, empdata);
   }
 
-  public deleteemp(id): Observable<any>{
-    return this.http.delete<any>(`http://localhost:3000/employee/${id}`);
+  public deleteemp(id): Observable<Employee>{
+    return this.http.delete<Employee>(`http://localhost:3000/employee/${id}`);
   }
 }

@@ -8,6 +8,8 @@ import { ParentComponent } from './parent/parent.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { EmpComponent } from './emp/emp/emp.component';
+import { PersonComponent } from './person/person.component';
+import { OrderlistComponent } from './orderlist/orderlist.component';
 
 
 const routes: Routes = [
@@ -18,6 +20,8 @@ const routes: Routes = [
    {path : 'parent', component : ParentComponent},
    {path : 'dashboard', component : DashboardComponent},
    {path : 'calculator', component : CalculatorComponent},
+   {path : 'person', component : PersonComponent},
+   {path : 'orderlist', component : OrderlistComponent},
    {path : '', redirectTo : 'Login' , pathMatch : 'full'},
    {path : 'emp', loadChildren : () => import('./emp/emp.module').then(m => m.EmpModule)}
   // {path : 'emp', component : EmpComponent}

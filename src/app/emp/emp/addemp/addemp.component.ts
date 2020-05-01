@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpService } from 'src/app/Service/http.service';
 import { Router } from '@angular/router';
+import { Employee } from 'src/app/Model/employee.model';
 
 @Component({
   selector: 'app-addemp',
@@ -32,7 +33,7 @@ export class AddempComponent implements OnInit {
       address: this.address,
       city: this.city
     };
-    this.httpservice.addemp(this.empdata).subscribe((data: any) => {
+    this.httpservice.addemp(this.empdata).subscribe((data: Employee) => {
       if (data){
         alert ('emp data added succesfully');
         this.router.navigate(['emp']);

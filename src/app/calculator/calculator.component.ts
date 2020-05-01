@@ -55,4 +55,12 @@ export class CalculatorComponent implements OnInit {
     this.router.navigate(['emp']);
   }
 
+  public doperson(){
+    this.router.navigate(['person']);
+  }
+
+  public doOrderList(){
+    this.router.navigate(['orderlist']);
+  }
+
 }

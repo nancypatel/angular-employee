@@ -1,0 +1,34 @@
+<p>orderlist works!</p>
+<body>
+    <br>
+    <div style="align-items: center;">
+        <button >Add emp</button>
+    </div><br><br>
+    <table id="table">
+        <tr id="tr">
+            <th id="th" rowspan="1" colspan="1">ord_id</th>
+            <th id="th" rowspan="1" colspan="1">name</th>
+            <th id="th" rowspan="1" colspan="1">Email</th>
+            <th id="th" rowspan="1" colspan="1">Password</th>
+            <th id="th" rowspan="1" colspan="1">city</th>
+            <th id="th" rowspan="1" colspan="1">address</th>
+            <th id="th" rowspan="1" colspan="1">phone</th>
+            <th id="th" rowspan="1" colspan="1">date</th>
+            <th id="th" rowspan="1" colspan="1">edit</th>
+            <th id="th" rowspan="1" colspan="1">delete</th>
+        </tr>
+        <tr *ngFor = "let ord of ordData">
+           <td id="td" rowspan="1" colspan="1">{{ord.ord_id}}</td>
+           <td id="td" rowspan="1" colspan="1">{{ord.custname}}</td>
+           <td id="td" rowspan="1" colspan="1">{{ord.email}}</td>  
+           <td id="td" rowspan="1" colspan="1">{{ord.password}}</td>
+           <td id="td" rowspan="1" colspan="1">{{ord.city}}</td>  
+           <td id="td" rowspan="1" colspan="1">{{ord.address}}</td>
+           <td id="td" rowspan="1" colspan="1">{{ord.phone}}</td>
+           <td id="td" rowspan="1" colspan="1">{{ord.date}}</td>
+           <td id="td" rowspan="1" colspan="1"><button>Edit</button></td> 
+           <td id="td" rowspan="1" colspan="1"><button>Delete</button></td>  
+        </tr>     
+    </table>
+</body>
+    

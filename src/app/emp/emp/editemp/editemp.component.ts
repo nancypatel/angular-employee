@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpService } from 'src/app/Service/http.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Employee } from 'src/app/Model/employee.model';
 
 
 @Component({
@@ -24,7 +25,7 @@ export class EditempComponent implements OnInit {
   ) {
     // this.id = 1;
     this.id = this.activateRoute.snapshot.params.id;
-    this.httpservice.getbyidemp(this.id).subscribe((data: any) => {
+    this.httpservice.getbyidemp(this.id).subscribe((data: Employee) => {
       if (data){
         this.name = data.name;
         this.lastname = data.lastname;
@@ -47,7 +48,7 @@ export class EditempComponent implements OnInit {
       city: this.city
     };
     console.log(this.empdata);
-    this.httpservice.editemp(this.id, this.empdata).subscribe((data: any) => {
+    this.httpservice.editemp(this.id, this.empdata).subscribe((data: Employee) => {
       if (data) {
         alert('emp data edit succesfully');
         this.router.navigate(['emp']);

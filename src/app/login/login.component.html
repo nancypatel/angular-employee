@@ -2,37 +2,35 @@
 <html>
   <head>
     <header>
-      <div>
-        
-      </div>
+      <tr>
+      </tr>
     </header>
   </head>
-  <form method="post" style="background-color:#3a3a37">
-    <div class="imgcontainer">
-      
-    </div>
+  <body>
+    <form method="post" style="background-color:#3a3a37">
+      <div class="imgcontainer"> 
+      </div>
+      <div class="container">
+        <label for="uname" style="color: aliceblue;"><b>Username</b></label>
+        <input type="text" [(ngModel)]="uname" name="uname" [value]="uname" required>
+    
+        <label for="psw" style="color: aliceblue;"><b>Password</b></label>
+        <input type="password" [(ngModel)]="psw" name="psw" [value]="psw" required>
+    
+        <button type="submit">Login</button>
   
-    <div class="container">
-      <label for="uname" style="color: aliceblue;"><b>Username</b></label>
-      <input type="text" [(ngModel)]="uname" name="uname" [value]="uname" required>
-  
-      <label for="psw" style="color: aliceblue;"><b>Password</b></label>
-      <input type="password" [(ngModel)]="psw" name="psw" [value]="psw" required>
-  
-      <button type="submit">Login</button>
-
-      <button type="submit" (click)="doregister()">Register</button>
-      <button type="submit" (click)="objectdata()">ParentChild</button>
-      <button type="submit" (click)="dashboard()">Dashboard</button>
-      <button type="submit" (click)="calc()">Calc</button>
-      <label style="color: aliceblue;">
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-    </div>
-  
-    <div class="container" style="background-color:#0be5f5">
-      <button type="button" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-</form> 
+        <button type="submit" (click)="doregister()">Register</button>
+        <button type="submit" (click)="objectdata()">ParentChild</button>
+        <button type="submit" (click)="dashboard()">Dashboard</button>
+        <button type="submit" (click)="calc()">Calc</button>
+        <label style="color: aliceblue;">
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+      <div class="container" style="background-color:#0be5f5">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+  </form> 
+  </body>
 </html>

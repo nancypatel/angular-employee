@@ -1,0 +1,35 @@
+<p>person works!</p>
+
+<form [formGroup]="angForm" (ngSubmit)="onSubmit()">
+    <input type = "text" name = "name" placeholder = "name" formControlName="name" #name>
+    <div *ngIf="submitted &amp;&amp; angForm.controls.name.errors" class="text-danger">
+        <div *ngIf="angForm.controls.name.errors.required">Name is required</div>
+    </div>
+    <br/>
+    <input type = "text" name = "lastname"  placeholder = "lastname" formControlName="lastname" #lastname>
+    <div *ngIf="submitted &amp;&amp; angForm.controls.lastname.errors" class="text-danger">
+        <div *ngIf="angForm.controls.lastname.errors.required">lastname is required</div>
+    </div>
+    <br/>
+    <input type = "text" name = "address"  placeholder = "address" formControlName="address" #address>
+    <div *ngIf="submitted &amp;&amp; angForm.controls.address.errors" class="text-danger">
+        <div *ngIf="angForm.controls.address.errors.required">Address is required</div>
+    </div>
+    <br/>
+    <input type = "text" name = "city"  placeholder = "city" formControlName="city" #city>
+    <div *ngIf="submitted &amp;&amp; angForm.controls.city.errors" class="text-danger">
+        <div *ngIf="angForm.controls.city.errors.required">city is required</div>
+    </div>
+    <br/>
+    <input type = "number" name = "phone"  placeholder = "phone" formControlName="phone" #phone>
+    <div *ngIf="submitted &amp;&amp; angForm.controls.phone.errors" class="text-danger">
+        <div *ngIf="angForm.controls.phone.errors.required">phone is required</div>
+    </div>
+    <br/>
+    <input type = "text" name = "Qualifaction"  placeholder = "Qualifaction" formControlName="Qualifaction" #Qualifaction>
+    <div *ngIf="submitted &amp;&amp; angForm.controls.Qualifaction.errors" class="text-danger">
+        <div *ngIf="angForm.controls.Qualifaction.errors.required">Qualifaction is required</div>
+    </div>
+    <br/>
+    <button type="submit">Submit</button>
+</form>
