@@ -13,7 +13,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { PersonComponent } from './person/person.component';
 import { OrderlistComponent } from './orderlist/orderlist.component';
-
+import { StudentProfileComponent } from './schoolManagement/student-profile/student-profile.component';
+import { StudlistComponent } from './schoolManagement/studlist/studlist.component';
+import { EditlistComponent } from './schoolManagement/editlist/editlist.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +27,10 @@ import { OrderlistComponent } from './orderlist/orderlist.component';
     DashboardComponent,
     CalculatorComponent,
     PersonComponent,
-    OrderlistComponent
+    OrderlistComponent,
+    StudentProfileComponent,
+    StudlistComponent,
+    EditlistComponent
   ],
   imports: [
     BrowserModule,

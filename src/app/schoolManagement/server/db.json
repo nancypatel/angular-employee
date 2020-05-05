@@ -1,0 +1,44 @@
+{
+  "student": [
+    {
+      "name": "nancy",
+      "lname": "patel",
+      "email": "krishna nagar",
+      "psw": "nancy12345",
+      "dob": "2019-08-23",
+      "address": "nanakwad valsad",
+      "city": "valsad",
+      "id": 1
+    },
+    {
+      "name": "xyz",
+      "lname": "desi",
+      "email": "xyz@gmail.com",
+      "psw": "xyz12345",
+      "dob": "2020-05-03",
+      "address": "krishna nagar soc,7",
+      "city": "vapi",
+      "id": 2
+    },
+    {
+      "name": "ekta",
+      "lname": "valvi",
+      "email": "ekta123@gmail.com",
+      "psw": "ekta1234",
+      "dob": "2020-05-06",
+      "address": "gghhjhjhj",
+      "city": "vapi",
+      "id": 3
+    },
+    {
+      "name": "Abc",
+      "lname": "chauhan",
+      "email": "admin1@admin.com",
+      "psw": "abc12315",
+      "dob": "2020-06-15",
+      "address": "nanakwad soc,7",
+      "city": "valsad",
+      "id": 4
+    }
+  ]
+}

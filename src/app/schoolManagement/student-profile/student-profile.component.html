@@ -1,0 +1,40 @@
+<p>student-profile works!</p>
+
+<html>
+  <head>
+    <header>
+      <tr>
+      </tr>
+    </header>
+  </head>
+  <body>
+    <form method="post" style="background-color:#3a3a37">
+      <div class="imgcontainer"> 
+      </div>
+      <div class="container">
+        <label for="uname" style="color: aliceblue;"><b>name</b></label>
+        <input type="text" [(ngModel)]="name" name="name" [value]="name"><br>
+    
+        <label for="uname" style="color: aliceblue;"><b>LastName</b></label>
+        <input type="text" [(ngModel)]="lname" name="lname" [value]="lname"><br>
+    
+        <label for="email" style="color: aliceblue;"><b>Email</b></label>
+        <input type="text" [(ngModel)]="email" name="email" [value]="email"><br>
+    
+        <label for="psw" style="color: aliceblue;"><b>Password</b></label>
+        <input type="text" [(ngModel)]="psw" name="psw" [value]="psw"><br>
+
+        <label for="dob" style="color: aliceblue;"><b>DOB</b></label>
+        <input type="date" [(ngModel)]="dob" name="dob" [value]="dob"><br>
+
+        <label for="address" style="color: aliceblue;"><b>Address</b></label>
+        <input type="text" [(ngModel)]="address" name="address" [value]="address"><br>
+
+        <label for="city" style="color: aliceblue;"><b>City</b></label>
+        <input type="text" [(ngModel)]="city" name="city" [value]="city"><br>
+    
+        <button type="submit" (click)="addStud()">Save</button>
+      </div>
+  </form> 
+  </body>
+</html>

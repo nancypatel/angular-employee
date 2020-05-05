@@ -39,4 +39,8 @@ export class LoginComponent implements OnInit {
     this.router.navigate(['calculator']);
   }
 
+  public Student(){
+    this.router.navigate(['studlist']);
+  }
+
 }
